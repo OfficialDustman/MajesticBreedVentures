@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+img.menu {
+    display: none;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a, h1, h2, h3 {
+    color: hsl(228, 39%, 23%);
+}
+
+nav a:hover {
+    color: hsl(227, 12%, 61%);
+}
+
+p {
+    color: hsl(227, 12%, 61%);
+    font-size: larger;
+}
+
+a.btn {
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 2rem;
+    padding: 0.8rem 1.5rem;
+    color: hsl(0, 0%, 98%);
+}
+
+a.btn:hover {
+    color: hsl(13, 100%, 96%);
+}
+
+section {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#about {
+    height: 27rem;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 100%;
+}
+
+.about-us h1 {
+    font-size: xxx-large;
+    font-size: 3rem;
+}
+
+.about-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-service h2 {
+    font-size: xx-large;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#testimonials {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+#testimonials .slide{
+    position: relative;    
+    padding:2rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    height: 25rem;
+}
+
+#testimonials .slide p{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+#testimonials a.btn{
+    align-self: center;
+}
+
+/* #testimonials .slide .fa-quote-right{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5.5rem;
+    color: lightslategray;
+} */
+
+.simplify {
+    display: flex;
+    padding: 3rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(12, 88%, 59%);
+}
+
+.simplify h2{
+    color: hsl(0, 0%, 98%);
+    font-size: xx-large;
+}
+
+.simplify a.btn-reverse {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+}
+
+footer {
+    display: flex;
+    background-color: hsl(233, 12%, 13%);
+    color: hsl(0, 0%, 98%);
+    padding: 4rem;
+    margin-top: -3rem;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons, .footer-details {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.footer-detail, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
+}
+
+.footer-detail a, .footer-contact h2, .info a, .footer-icons a{
+    color: hsl(0, 0%, 98%);
+}
+
+.footer-detail a:hover, .info a:hover{
+    color: hsl(12, 88%, 59%);
+    /* color: hsl(13, 100%, 96%); */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info div {
+    gap: 1rem;
+    display: flex;
+}
+
+.attribution { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 11px; 
+    align-items: center; 
+    margin-top: -3rem; 
+    padding: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width : 875px) {
+    header {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #about {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width : 765px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .about-us {
+        gap: 2rem;
+    }
+    
+    #service {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .simplify {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-logo {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width : 525px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img.menu {
+        display: block;
+    }
+
+    nav, header a.btn {
+        display: none;
+    }
+
+    li {
+        align-items: flex-start;
+    }
+
+    .footer-details {
+        flex-direction: column;
+    }
+
+    .footer-detail, .footer-contact, .info {
+        align-items: center;
+    }
+
+    .info div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
